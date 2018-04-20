@@ -14,4 +14,4 @@ ONBUILD RUN dep ensure -v -vendor-only
 ONBUILD COPY . .
 ONBUILD RUN go install -v ./... 
 
-CMD ["app"]
+ENTRYPOINT ["app"]
